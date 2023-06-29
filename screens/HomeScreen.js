@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, SafeAreaView,Image } from 'react-native'
 import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
+import Footer from '../footer and header/Footer';
 
 
 export default function HomeScreen() {
@@ -20,7 +21,7 @@ export default function HomeScreen() {
                     }}
                 />
                 <NavOptions/>
-            </View>
+            </View>    
         </SafeAreaView>
     )
 }

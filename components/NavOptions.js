@@ -17,7 +17,7 @@ const data = [
         title: "Order food",
         image: "https://links.papareact.com/28w",
         screen: "EatsScreen",
-    },
+    },    
 ]
 
 
@@ -27,21 +27,21 @@ export default function NavOptions() {
     const navigation = useNavigation();
 
     return (
-        <FlatList style={tw`inline-block mx-auto`}
+        <FlatList style={tw`mx-auto`}
             data={data}
             horizontal
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
                 <TouchableOpacity 
                 onPress={() => navigation.navigate(item.screen)}
-                style={tw`bg-gray-200 pb-8 pt-4 pl-6 p-2 m-2`}>
+                style={tw`bg-gray-200 p-10 m-2`}>
                     <View>
                         <Image
                             style={{
                                 width: 120,
                                 height: 120,
                                 resizeMode: "contain",
-                            }}
+                            }}  
                             source={{
                                 uri: item.image,
                             }}
